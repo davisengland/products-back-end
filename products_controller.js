@@ -3,7 +3,7 @@ module.exports = {
         const db = req.app.get('db')
         const { name, description, price, image_url } = req.body
 
-        db.create_products([name, description, price, image_url])
+        db.create_product([name, description, price, image_url])
             .then(dbRes => {
                 res.status(200).send(dbRes)
             })

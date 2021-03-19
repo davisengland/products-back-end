@@ -21,7 +21,7 @@ massive({
 })
     .then(dbInstance => {
     app.set('db', dbInstance)
-    
-    app.listen(SERVER_PORT, () => console.log(`Server running on ${SERVER_PORT}`))
 })
     .catch(err => console.log(err))
+    
+app.listen(SERVER_PORT, () => console.log(`Server running on ${SERVER_PORT}`))
